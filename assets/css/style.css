@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-#header.header-top .navbar {
+#header.header-top .nav {
   margin: 0;
 }
 
@@ -171,12 +171,12 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Desktop Navigation 
 */
-.navbar {
+.nav {
   padding: 0;
   margin-top: 35px;
 }
 
-.navbar ul {
+.nav ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -184,15 +184,15 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.navbar li {
+.nav li {
   position: relative;
 }
 
-.navbar li + li {
+.nav li + li {
   margin-left: 30px;
 }
 
-.navbar a {
+.nav a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -205,13 +205,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-.navbar a i {
+.nav a i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
 
-.navbar a:before {
+.nav a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -224,12 +224,15 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+.nav a:hover:before, .nav li:hover > a:before, .nav .active:before {
   visibility: visible;
   width: 25px;
 }
-
-.navbar a:hover, .navbar .active, .navbar li:hover > a {
+.copyrightes{
+  text-align: center;
+  padding: 40px;
+}
+.nav a:hover, .nav .active, .nav li:hover > a {
   color: #fff;
 }
 
@@ -252,12 +255,12 @@ h1, h2, h3, h4, h5, h6 {
   .mobile-nav-toggle {
     display: block;
   }
-  .navbar ul {
+  .nav ul {
     display: none;
   }
 }
 
-.navbar-mobile {
+.nav-mobile {
   position: fixed;
   overflow: hidden;
   top: 0;
@@ -270,13 +273,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
-.navbar-mobile .mobile-nav-toggle {
+.nav-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-.navbar-mobile ul {
+.nav-mobile ul {
   display: block;
   position: absolute;
   top: 55px;
@@ -289,15 +292,15 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.navbar-mobile li {
+.nav-mobile li {
   padding: 12px 20px;
 }
 
-.navbar-mobile li + li {
+.nav-mobile li + li {
   margin: 0;
 }
 
-.navbar-mobile a {
+.nav-mobile a {
   font-size: 16px;
   position: relative;
 }
@@ -371,6 +374,9 @@ section .container {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about{
+  background-color: #08010fce;
+}
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -524,7 +530,7 @@ section .container {
   border-radius: 50%;
   margin: -40px 0 0 40px;
   position: relative;
-  z-index: 2;
+ z-index: 2; 
   border: 6px solid rgba(255, 255, 255, 0.12);
 }
 
